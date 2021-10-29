@@ -1,0 +1,52 @@
+.icon
+{
+    position: relative;
+    color:$primarycolor;
+    &>img 
+    {
+        position: absolute;
+        z-index: -1;
+        width:100%;
+        height: 100%;
+    }
+    &-list
+    {
+        padding: 150px 0px;
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(250px,1fr));
+        grid-gap:30px;
+       
+    }
+    &-item
+    {
+        height: 426px;
+        background-color: #2b3139;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:30px;
+        &-text
+        {
+            text-align: center;
+            margin: 0px 80px;
+            p
+            {
+                color: $secondcolor;
+            }
+        }
+    }
+}
+@include maxw(768px)
+{
+    .icon-list
+    {
+        padding-bottom: 20px;
+    }
+    .icon-item
+    {
+        height:300px
+        
+    }
+}

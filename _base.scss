@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+body
+{
+    max-width: 1920px;
+    font-family:'Myriad Pro';
+    margin: 0 auto;
+    background-color: $backgroundcolor; 
+}
+.container
+{
+    max-width: 1200px;
+    padding:0px 15px;
+    margin: 0px auto;
+    position: relative;
+}
+img
+{  
+    object-fit: cover;
+    border-radius: inherit;
+}
+i:hover
+{
+    cursor: pointer;
+}
+.btn
+{
+    width: 230px;
+    height: 60px;
+    outline: none;
+    border: none;
+    background: linear-gradient(#f66865,#f68728);
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+.btn:hover
+{
+    cursor: pointer; 
+}
+.text-conten
+{
+    h3 
+    {
+        text-transform: uppercase;
+        color: $red;
+        margin-bottom: 45px;
+    }
+    h1 
+    {
+        color:$primarycolor;
+        margin-bottom: 45px;
+    }
+    p 
+    {
+        color:$secondcolor;
+        margin-bottom: 70px;
+    }
+}

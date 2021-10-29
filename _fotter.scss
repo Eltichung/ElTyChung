@@ -1,0 +1,214 @@
+.contac
+{
+    
+    &-main
+    {
+        height: 600px;
+        position: relative;
+        background: url(./img/img26.png) no-repeat center;
+        background-color: #1e242e;
+        display: flex;
+        margin-bottom: -300px;
+        z-index: 2;
+       position: relative;
+        
+    }
+    &-text
+    {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        h1 
+        {
+            font-size: 60px;
+        }
+    }
+    &-img1
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+    &-img2
+    {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+}
+.fotter
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+   
+    &-main
+    {
+
+        background-color:#282f3a;
+        position: relative;
+       
+    } 
+    &-list
+    {
+        padding-top: 400px;
+        display: flex;    
+        gap:150px;
+        color:$secondcolor;
+
+        &-item
+        {
+            display: flex;
+            flex-direction:column;
+            gap:30px;
+            h3 
+            {
+                color:$primarycolor;
+            }
+            li 
+            {
+                margin-bottom: 30px;
+            }
+            i 
+            {
+                margin: 10px;
+            }
+            i:hover
+            {
+                transform: scale(1.3);
+               transition: 0.5s linear;
+            }
+            &:last-child
+            {
+                li 
+                {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    &-source
+    {
+        height: 100px;
+        background-color: #252b36;
+        color:$secondcolor;
+        position: relative;
+        p 
+        {
+            margin-top: 25px;
+        }
+    }
+    &-more
+    {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(#f66865,#f68728);
+        position: absolute;
+        right: 19.53%;
+        top:0%;
+        transform: translateY(-50%);  
+        i 
+        {
+            font-size: 50px;
+            color: black;
+            font-weight: 400px;
+        }
+    }
+}
+@include maxw(1024px)
+{
+   .fotter
+   {
+       font-size: 13px;
+   }
+}
+@include maxw(768px)
+{
+   .fotter
+   {
+       font-size: 8px;
+       &-list-item
+        {
+           
+           li 
+            {
+                margin-bottom: 10px;
+            }
+            i 
+            {
+                margin: 5px;
+            }
+            &:last-child
+            {
+                gap:20px;
+            }
+            
+        }
+    }
+}
+@include maxw(488px)
+{
+   .fotter
+   {
+       font-size: 8px;
+       &-list
+       {
+           gap:30px;
+       }
+    } 
+    .contac
+    {
+        &-img
+        {
+            transform: scale(0.7);
+        }
+        &-main
+        {
+            height: 400px;
+        }
+        &-text
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            h1 
+            {
+                color:$primarycolor;
+                margin-bottom: 15px;
+                font-size: 25px;
+            }
+            p 
+            {
+                color:$secondcolor;
+                font-size: 15px;
+                margin-bottom: 200px;
+            }
+        }
+    }
+}
+@include maxw(320px)
+{
+   .fotter
+   {
+        &-more
+        {
+            width: 30px;
+            height: 30px;
+            bottom:100%;
+            right: 5%;
+            i 
+            {
+                font-size: 30px;
+            }
+        }
+   } 
+}
+
